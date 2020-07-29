@@ -12,7 +12,7 @@ from sklearn.impute import SimpleImputer
 
 def null_values(train, test, t):
 
-  """ input: train and test sets after unbalanced_classes
+  """ input: train and test sets after basic_prepro
   output: y_train, X_train, y_test, X_test 
   *if a feature has more than t% of null values, drop it """
   

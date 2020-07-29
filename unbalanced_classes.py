@@ -9,18 +9,49 @@ Original file is located at
 
 import pandas as pd
 from sklearn.utils import resample
+from imblearn.over_sampling import SMOTE
 
-def downsampling(set):
-  """Downsampling the majority class until reaching the minority class"""
+def downsampling(y, X):
+  """Downsampling the majority class until reaching the minority class
+  input: y, X pairs after null_values
+  output: balanced y, X"""
   # classes
-  classes = set["class"].value_counts()
+  classes = y.value_counts()
+ 
   # split by classes
-  majority = set[set["class"] == 0]
-  minority = set[set["class"] == 1]
+  index_maj =  y.index[y == 0].tolist()
+  index_min = y.index[y == 1].tolist()
 
-  # select only 1000 data points
+  majority = X[X.index.isin(index_maj)]
+  minority = X[X.index.isin(index_min)]
+
+
+  # select data points from the majority 
   majority_downsampled = resample(majority, replace = False, n_samples = classes[1])
 
-  set = pd.concat([majority_downsampled, minority])
+  # merge 
+  X_balanced = pd.concat([majority_downsampled, minority])
+  X_balanced.sort_index(inplace=True)
+  
+  y_balanced = y[y.index.isin(X_balanced.index.tolist())]
+  
+  y_balanced = y_balanced.reset_index(drop=True)
+  y_balanced = pd.DataFrame(y_balanced)
+  X_balanced = X_balanced.reset_index(drop=True)
+  
+  return y_balanced, X_balanced
 
-  return set
+def mySMOTE(y, X, k):
+  """Upsampling the minority class creating synthetic data through SMOTE
+  input: y, X pairs after null_values
+  output: balanced y, X"""
+  sm =  SMOTE(sampling_strategy='auto', k_neighbors=k, random_state=100)
+  X_res, y_res = sm.fit_resample(X, y)
+
+  X_res = pd.DataFrame(X_res)
+  X_res.columns = X.columns
+
+  y_res = pd.DataFrame(y_res)
+  y_res.columns = ["class"]
+
+  return y_res, X_res

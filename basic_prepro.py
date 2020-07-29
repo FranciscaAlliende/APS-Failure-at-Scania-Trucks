@@ -12,7 +12,7 @@ import numpy as np
 
 def data_prepro(set):
 
-  """ basic data prepropcesing common for all braches, """
+  """ basic data prepropcesing common to all braches"""
 
   # replace in class column: pos = 1; neg = 0
   set['class'] = set['class'].map({'pos': 1, 'neg': 0})
