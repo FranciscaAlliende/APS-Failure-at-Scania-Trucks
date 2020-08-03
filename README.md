@@ -16,7 +16,7 @@ STEPS:
  - input: y, X unbalance pair
  - output: y, X balanced pair
  * hyperparameter: SMOTE number of neighbors: set at 100
- 4. dimensionality reduction(Random Forest or PCA)
+ 4. dimensionality reduction (Random Forest or PCA)
  - input: X_train, y_train after unbalanced class and X_test after null_values
  - output: X_train and X_test with the selected features
  * hyperparameters:
