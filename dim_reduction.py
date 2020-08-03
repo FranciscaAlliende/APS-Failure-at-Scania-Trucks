@@ -43,27 +43,33 @@ def RF(X_train, y_train, X_test, n_estimators, g):
   return X_train, X_test
 
 
-def myPCA(X, nc):
+def myPCA(X_train, X_test, nc):
   # scale the features
   scaler = StandardScaler()
-  X = scaler.fit_transform(X)
+  X_train = scaler.fit_transform(X_train)
+  X_test = scaler.fit_transform(X_test)
 
-  # plot explained variance to choose num components
+  # plot explained variance train set to choose num components
   pca = PCA()
-  pca.fit_transform(X)
+  pca.fit_transform(X_train)
   pca_variance = pca.explained_variance_
 
   plt.figure(figsize=(8, 6))
-  plt.bar(range(162), pca_variance, alpha=0.5, align='center', label='individual variance')
+  plt.bar(range(162), pca_variance, alpha=0.5, align='center', label='individual variance train set')
   plt.legend()  
   plt.ylabel('Variance ratio')
   plt.xlabel('Principal components')
   plt.show()
 
-  # apply transformation
+  # fit pca into train data
   pca2 = PCA(n_components=nc)
-  pca2.fit(X)
-  X_red = pca2.transform(X)
-  X_red = pd.DataFrame(X_red)
+  pca2.fit(X_train)
 
-  return X_red
+  # apply transformation to train and test
+  X_train = pca2.transform(X_train)
+  X_train = pd.DataFrame(X_train)
+
+  X_test = pca2.transform(X_test)
+  X_test = pd.DataFrame(X_test)
+
+  return X_train, X_test
