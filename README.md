@@ -1,6 +1,8 @@
 # APS-Failure-at-Scania-Trucks
 1st case Master Thesis Machine Learning Techniques for Predictive Maintenance in Industry
 
+Check [Scania Trucks](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/ScaniaTrucks.ipynb) for preliminary results
+
 
 #### Pipeline
 
@@ -22,3 +24,9 @@ STEPS:
  * hyperparameters:
     - Random Forest: n_estimators: set at 100 and g: feature importance (gini) threshold, set after vizualizing the corresponding graph at 0.02 for downsampling and 0.015 for upsampling.  
     - PCA: nc: number of components, set at 80
+ 5. Classification
+ - SVM
+ ...
+ 6. Cost evaluation
+ 
+ 7. Model comparision
