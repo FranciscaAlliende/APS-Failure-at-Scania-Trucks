@@ -1,5 +1,4 @@
 # APS-Failure-at-Scania-Trucks
-1st case Master Thesis Machine Learning Techniques for Predictive Maintenance in Industry
 
 Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository available [here](https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks)
 
