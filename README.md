@@ -7,7 +7,8 @@ Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository
 
 #### Goal
 Reduce the false negatives as much as possible, having false positives under control.
-Minimize $cost =  c1 * False Positives + c2 * False Negatives$ with c1 = 10, and c2 = 500
+
+Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c2 = 500
 
 #### First Approach: Sampling techniques
 - Handle null values on training  and test set 
