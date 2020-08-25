@@ -8,7 +8,7 @@ Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository
 - Handle null values on training  and test set 
 - Apply a sampling technique to the training set
 - Train the models with balanced data
-- The model used, will be (regular versions of RF, k-NN, LR and SVM)
+- The models are the regular versions of RF, k-NN, LR and SVM
 - Predict and evaluate
 
 Notebooks
