@@ -4,6 +4,11 @@ Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository
 
 [Data description Notebook](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Data_Description.ipynb)
 
+
+#### Goal
+Reduce the false negatives as much as possible, having false positives under control.
+Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c2 = 500
+
 #### First Approach: Sampling techniques
 - Handle null values on training  and test set 
 - Apply a sampling technique to the training set
