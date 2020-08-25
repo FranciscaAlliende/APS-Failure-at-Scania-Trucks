@@ -6,7 +6,7 @@ Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository
 
 
 #### First Approach: Cost-Sensitive Learning Models
-- Divided the training set into training and validation sets
+- Divide the training set into training and validation sets
 - Handle null values on training, validation and test set 
 - Find the right hyparameters for each of the mentioned models in order to reduce the false negatives as much as possible, having false positives under control.
 - Train the models
