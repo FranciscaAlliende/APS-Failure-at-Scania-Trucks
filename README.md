@@ -3,7 +3,7 @@
 ### Data
 Source: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository available [here](https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks)
 
-[Data description Notebook](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Data_Description.ipynb)
+Notebook: [Data description](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Data_Description.ipynb)
 
 
 ### Goal
