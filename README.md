@@ -19,8 +19,8 @@ Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c
 - Predict and evaluate
 
 Notebooks
-* [SMOTE]()
-* [Downsampling]()
+* [SMOTE](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/SMOTE.ipynb)
+* [Downsampling]() almost ready
 
 ### Second Approach: Cost-Sensitive Learning Models
 - Divide the training set into training and validation sets
@@ -31,9 +31,9 @@ Notebooks
 
 Notebooks:
 * [Weighted Random Forest](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Weighted_Random_Forest.ipynb)
-* [Modified k-NN]()
-* [Weighted Logistic Regression]()
-* [Cost-sensitive SVM]()
+* [Modified k-NN]() to do
+* [Weighted Logistic Regression]() to do
+* [Cost-sensitive SVM]() to do
 
 
 
