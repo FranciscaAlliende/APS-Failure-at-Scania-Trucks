@@ -1,16 +1,16 @@
 # APS-Failure-at-Scania-Trucks
 
-Data: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository available [here](https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks)
-
+### Data
+Source: APS Failure at Scania Trucks Data Set from UCI Machine Learning Repository available [here](https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks)
 [Data description Notebook](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Data_Description.ipynb)
 
 
-#### Goal
+### Goal
 Reduce the false negatives as much as possible, having false positives under control.
 
 Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c2 = 500
 
-#### First Approach: Sampling techniques
+### First Approach: Sampling techniques
 - Handle null values on training  and test set 
 - Apply a sampling technique to the training set
 - Train the models with balanced data
@@ -21,7 +21,7 @@ Notebooks
 * [SMOTE]()
 * [Downsampling]()
 
-#### Second Approach: Cost-Sensitive Learning Models
+### Second Approach: Cost-Sensitive Learning Models
 - Divide the training set into training and validation sets
 - Handle null values on training, validation and test set 
 - Find the right hyparameters for each of the mentioned models in order to reduce the false negatives as much as possible, having false positives under control.
