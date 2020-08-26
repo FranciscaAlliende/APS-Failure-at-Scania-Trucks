@@ -20,7 +20,7 @@ Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c
 
 Notebooks
 * [SMOTE](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/SMOTE.ipynb)
-* [Downsampling]() almost ready
+* [Downsampling](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Downsampling.ipynb)
 
 ### Second Approach: Cost-Sensitive Learning Models
 - Divide the training set into training and validation sets
