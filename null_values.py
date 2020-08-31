@@ -29,7 +29,7 @@ def null_values(train, test, t):
   X_test = X_test[X_train.columns]
 
   # fill the remaining null values with the median of the corresponding feature
-  imp = SimpleImputer(strategy = "median")
+  imp = SimpleImputer(strategy = "mean")
   T = pd.DataFrame(imp.fit_transform(X_train))
   T.columns = X_train.columns
   T.index = X_train.index
