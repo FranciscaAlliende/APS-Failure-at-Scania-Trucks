@@ -15,7 +15,7 @@ Minimize cost =  c1 * False Positives + c2 * False Negatives with c1 = 10, and c
 - Handle null values on training  and test set 
 - Apply a sampling technique to the training set
 - Train the models with balanced data
-- The models are the regular versions of RF, k-NN, LR and SVM
+- The models are the regular versions of RF, k-NN and SVM
 - Predict and evaluate
 
 Notebooks
@@ -32,7 +32,6 @@ Notebooks
 Notebooks:
 * [Weighted Random Forest](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Weighted_Random_Forest.ipynb)
 * [Modified k-NN]() to do
-* [Weighted Logistic Regression]() to do
 * [Cost-sensitive SVM]() to do
 
 
