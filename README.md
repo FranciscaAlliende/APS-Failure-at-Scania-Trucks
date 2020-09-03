@@ -30,7 +30,7 @@ Notebooks
 - Predict and evaluate
 
 Notebooks:
-* [Weighted Random Forest](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Weighted_Random_Forest.ipynb)
+* [Cost Sentive Learning: Random Forest]()
 * [Modified k-NN]() to do
 * [Cost-sensitive SVM]() to do
 
