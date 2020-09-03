@@ -30,7 +30,7 @@ Notebooks
 - Predict and evaluate
 
 Notebooks:
-* [Cost Sentive Learning: Random Forest]()
+* [Cost Sentive Learning: Random Forest](https://github.com/FranciscaAlliende/APS-Failure-at-Scania-Trucks/blob/master/Cost_Sentive_Learning_Random_Forest.ipynb)
 * [Modified k-NN]() to do
 * [Cost-sensitive SVM]() to do
 
