@@ -17,10 +17,11 @@ from sklearn.metrics import f1_score, precision_score, recall_score
 
 def evaluation_metrics(y_pred, y_test, X_test, clf, c1, c2):
   tn, fp, fn, tp = confusion_matrix(y_test, y_pred).ravel()
-  print("False positives: ",fp)
-  print("False negatives: ",fn)
   cost = c1*fp + c2*fn
   print("Total cost:", cost)
+  print("False positives: ",fp)
+  print("False negatives: ",fn)
+  
 
   print("Confusion matrix, without normalization")
   plot_confusion_matrix(clf, X_test, y_test, values_format = "d", cmap = "Greens")  
